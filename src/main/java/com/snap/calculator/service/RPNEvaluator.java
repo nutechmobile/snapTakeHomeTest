@@ -19,8 +19,6 @@ public class RPNEvaluator {
 
         int start = 0;
 
-//        Stack<String> stack = new Stack<>();
-
         while( start < input.length()) {
 
             //find the next space (input has space delimiters)
