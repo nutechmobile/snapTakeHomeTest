@@ -30,7 +30,7 @@ public class RPNCalculatorApplication {
             try {
                 System.out.println(rpnEvaluator.evaluate(input));
             } catch(Exception e) {
-                System.out.println(e.getMessage());
+                System.out.println(e);
                 System.out.println("Try again or type 'q' to quit the app.");
             }
 
