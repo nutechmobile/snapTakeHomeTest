@@ -22,7 +22,7 @@ public class RPNCalculatorApplication {
 
         RPNEvaluator rpnEvaluator = new RPNEvaluator();
 
-        while( input != QUIT) {
+        while(!input.equalsIgnoreCase(QUIT)) {
             System.out.print("> ");
 
             input = inpScan.nextLine();

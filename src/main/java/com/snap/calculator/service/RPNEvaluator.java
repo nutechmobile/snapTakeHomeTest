@@ -30,14 +30,14 @@ public class RPNEvaluator {
             //get the next number or operand
             String current = input.substring(start, end);
 
-            //if current char is an operand, then apply it to thr top 2 numbers on the stack LIFO
-            if(validOperands.indexOf(current.charAt(0)) != -1) {
+            //if current char is an operand and not a negative #, then apply it to the top 2 numbers on the LIFO stack
+            if(validOperands.indexOf(current.charAt(0)) != -1 && current.length() == 1) {
 
                 if(currentStack.size() < 2) {
                     throw new Exception("Not enough numbers available to perform the operation!");
                 }
 
-                String y =  currentStack.pop();
+                String y = currentStack.pop();
                 String x = currentStack.pop();
                 String operator = String.valueOf(current.charAt(0));
 
